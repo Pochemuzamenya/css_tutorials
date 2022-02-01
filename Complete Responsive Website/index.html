@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header active" id="navbar">
+            <a href="#" class="logo">II <span>C</span></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span class="menuIcon" onclick="menuToggle()"></span>
+        </div>
+        <div class="content">
+            <div class="banner-text" id="slideshowText">
+                <div class="active">
+                    <h2>EAT Healthy<br> 
+                    Stay Healthy</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla vitae scelerisque erat. Integer sed ipsum elit.</p>
+                         <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>EAT Your<br> 
+                    Veggies</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nulla vitae scelerisque erat. Integer sed ipsum elit. 
+                         Curabitur semper orci non massa congue, sit amet placerat lorem lacinia.</p>
+                         <a href="#">Read More</a>
+                </div>
+                <div>
+                    <h2>Good Food<br> 
+                    Good Mood</h2>
+                    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                        Curabitur semper orci non massa congue, sit amet placerat lorem lacinia.</p>
+                        <a href="#">Read More</a>
+                </div>
+            </div>
+        <div class="banner-img" id="slideshow">
+            <img src="small-img1.jpg" class="active"alt="altimg" srcset="">
+            <img src="small-img2.jpg" alt="altimg" srcset="">
+            <img src="small-img3.jpg" alt="altimg" srcset="">
+        </div>
+    </div>
+    <div class="icons">
+        <ul class="sci">
+            <li><a href=""><img src="twitter-nocircle.png" alt=""></a></li>
+            <li><a href=""><img src="vk-nocircle.png" alt=""></a></li>
+            <li><a href=""><img src="instagram.png" alt=""></a></li>
+        </ul>
+        <ul class="controls">
+            <li><a href="#"><img src="arrow-left.png" alt="" onclick="prevSlide(); prevSlideText()"></a></li>
+            <li><a href="#"><img src="arrow-right.png" alt="" onclick="nextSlide(); nextSlideText()"></a></li>
+        </ul>
+    </div>
+    </div>
+<!-- <script type="text/javascript">
+    var slideshow = document.getElementById('slideshow')
+    var slides = slideshow.getElementsByTagName('img')
+    var index = 0
+
+    function nextSlide(){
+        slides[index].classList.remove('active')
+        index = (index + 1) % slides.length
+        slides[index].classList.add('active')
+    }
+
+    function prevSlide(){
+        slides[index].classList.remove('active')
+        index = (index - 1 + slides.length) % slides.length
+        slides[index].classList.add('active')
+    }
+
+    var slideshowText = document.getElementById('slideshowText')
+    var slidesText = slideshowText.getElementsByTagName('div')
+    var j = 0
+
+    function nextSlideText(){
+        slidesText[j].classList.remove('active')
+        j = (j + 1) % slidesText.length
+        slidesText[j].classList.add('active')
+    }
+
+    function prevSlideText(){
+        slidesText[j].classList.remove('active')
+        j = (j - 1 + slidesText.length) % slidesText.length
+        slidesText[j].classList.add('active')
+    }
+
+    function menuToggle(){
+        var nav = document.getElementById('navbar')
+        nav.classList.toggle('active')
+    }
+</script> -->
+
+<section class="about">
+    <div class="about-box">
+        <h2>About Us</h2>
+        Иркутский Инженерный Центр образован в&nbsp;2012 году . Основной вид деятельности, это научные
+исследования и&nbsp;разработки. Основу команды составляют сотрудники с&nbsp;научными степенями. Мы
+способны решить широкий круг задач в&nbsp;области исследований и&nbsp;разработок научного и
+лабораторного оборудования, технологических линий и&nbsp;систем их&nbsp;управления. Некоторую часть
+нашей работы составляет разработка импортозамещающих устройств и&nbsp;технологий. Мы
+постоянно улучшаем производимое нами оборудование и&nbsp;осуществляем его техническую
+поддержку. В&nbsp;нашем распоряжении небольшое, но&nbsp;хорошо оснащённое опытное производство,
+которое позволяет нам выпускать опытные образцы, предсерийные прототипы и&nbsp;небольшие
+партии готовых изделий. Команда опытных инженеров, работающих на&nbsp;нашем производстве,
+способна выполнить квалифицированный ремонт и&nbsp;модернизацию любого оборудования любого
+производителя. Мы&nbsp;не&nbsp;прекращаем научную деятельность и&nbsp;имеет не&nbsp;одну сотню научных
+публикаций наших сотрудников и&nbsp;не&nbsp;один десяток патентов на&nbsp;изобретение.
+Наши услуги востребованы в&nbsp;таких областях как, энергетика, машиностроение, автотранспорт,
+АСУ, медицина (в&nbsp;части оборудования), золотодобыча и&nbsp;многих других. Мы&nbsp;всегда открыты к
+сотрудничеству.
+    </div>
+    <div class="img-box">
+        <img src="small-img1.jpg" alt="">
+    </div>
+</section>
+<script src="js/script.js"></script>
+
+
+
+
+</body>
+</html>
